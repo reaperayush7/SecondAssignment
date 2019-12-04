@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/MainbtnSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sum"
+        app:layout_constraintEnd_toStartOf="@+id/MainbtnAutomorphic"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/MainbtnPalindrome"
+        app:layout_constraintTop_toBottomOf="@+id/MainbtnReverseNumber" />
+
+    <Button
+        android:id="@+id/MainbtnArea"
+        android:layout_width="77dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:text="Area"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/MainbtnReverseNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/MainbtnReverseString"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Reverse String"
+        app:layout_constraintEnd_toStartOf="@+id/MainbtnReverseNumber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/MainbtnReverseNumber"
+        android:layout_width="126dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="Reverse Number"
+        app:layout_constraintEnd_toStartOf="@+id/MainbtnArea"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/MainbtnReverseString"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/MainbtnPalindrome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Palindrome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainbtnReverseString" />
+
+
+    <Button
+        android:id="@+id/MainbtnAutomorphic"
+        android:layout_width="115dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:text="Automorphic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/MainbtnSum"
+        app:layout_constraintTop_toBottomOf="@+id/MainbtnArea" />
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainbtnSum"></LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
